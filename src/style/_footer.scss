@@ -1,0 +1,68 @@
+// styles.scss
+@import './root';
+
+.container_footer {
+    background-color: transparent;
+    border: 2px solid $background-card-primary;
+    border-radius: 15px;
+    padding: 3rem;
+    margin-bottom: 2rem;
+}
+
+.box_lists {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.box_links-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.box_info-app {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.box_info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    h4 {
+        font-size: 2rem;
+        color: $primary-color;
+    }
+}
+
+.box_info-btn {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+// Rsponsive
+@media (max-width: 750px) {
+    .box_links-info {
+        flex-direction: column;
+    }
+
+    .box_lists {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .box_info-app {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
+}

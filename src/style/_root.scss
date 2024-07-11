@@ -1,0 +1,43 @@
+// variables.scss
+:root {
+    // Cors
+    --primary-color: #FF7A00;
+    --secondary-color: #EA7100;
+    --background-color-p: #ecf0f1;
+    --background-color-s: #EBEBEB;
+    --background-card-p: #909090;
+    --background-card-s: #fff;
+    --background-card-t: #D6D6D6;
+    --text-color-primary: #6A6E81;
+    --text-color-secondary: #808080;
+
+    // Fonts
+    --font-family-base: 'Helvetica, Arial, sans-serif';
+    --font-size-base: 16px;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+
+    // Espace
+    --spacing-small: 1.5rem;
+    --spacing-medium: 2rem;
+    --spacing-large: 2.5rem;
+}
+
+$primary-color: var(--primary-color);
+$secondary-color: var(--secondary-color);
+$background-color-primary: var(--background-color-p);
+$background-color-secomdary: var(--background-color-s);
+$background-card-primary: var(--background-card-p);
+$background-card-secomdary: var(--background-card-s);
+$background-card-tortary: var(--background-card-t);
+$text-color-primary: var(--text-color-primary);
+$text-color-secondary: var(--text-color-secondary);
+
+$font-family-base: var(--font-family-base);
+$font-size-base: var(--font-size-base);
+$font-weight-normal: var(--font-weight-normal);
+$font-weight-bold: var(--font-weight-bold);
+
+$spacing-small: var(--spacing-small);
+$spacing-medium: var(--spacing-medium);
+$spacing-large: var(--spacing-large);

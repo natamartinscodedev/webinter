@@ -2,27 +2,28 @@
 
 import Image from 'next/image'
 import React from 'react'
+import Buttom from '@/components/Button/index'
 
 interface typeParams {
   img: string | any,
   title: string,
   description: string,
-  titlebutton: string,
+  titlebutton?: string,
   disableTitle: boolean,
 }
 
-const CardServices = ({ img, title, description, titlebutton, disableTitle }: typeParams) => {
+const CardDisclousure = ({ img, title, description, titlebutton, disableTitle }: typeParams) => {
   return (
-    <div className=''>
-      <div className=''>
+    <div className='card_disclosure'>
+      <div className='disclosure_img'>
         <Image src={img} alt={title} />
       </div>
-      <div className=''>
-        <h2>{title}</h2>
+      <div className='disclosure_info'>
+        <h3>{title}</h3>
         <p>{description}</p>
         {
           disableTitle ?
-            <button>{titlebutton}</button>
+            <button className='btn'>{titlebutton}</button>
             : ''
         }
       </div>
@@ -30,4 +31,4 @@ const CardServices = ({ img, title, description, titlebutton, disableTitle }: ty
   )
 }
 
-export default CardServices
+export default CardDisclousure

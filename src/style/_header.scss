@@ -1,0 +1,76 @@
+// styles.scss
+@import './root';
+
+.card_header {
+    margin-top: 1rem;
+    margin-bottom: 10rem;
+}
+
+.card_navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.boz_link-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.card_menu {
+    display: none;
+}
+
+.open {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+
+// Rsponsive
+@media (max-width: 750px) {
+    .card_header {
+        margin-bottom: 5rem;
+    }
+
+    .card_menu {
+        display: flex;
+    }
+
+    .boz_link-menu {
+        display: none;
+    }
+
+    .card_menu-modal {
+        background-color: $background-card-secomdary;
+        border: 2px solid #333;
+        border-radius: 15px;
+        position: fixed;
+        z-index: 900;
+        width: 80%;
+        height: 300px;
+        margin: 0 auto;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .closed {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        padding: 4px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

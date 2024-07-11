@@ -1,0 +1,47 @@
+// styles.scss
+@import './root';
+
+.card_button {
+    width: 140px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-weight: $font-weight-bold;
+
+    img {
+        width: 1.3rem;
+    }
+}
+
+.button_on {
+    background-color: $primary-color;
+    color: $background-card-secomdary;
+
+    &:hover {
+        background-color: $secondary-color;
+    }
+}
+
+.button_of {
+    background-color: transparent;
+    border: 2px solid $background-card-primary;
+    color: $text-color-primary;
+
+    &:hover {
+        color: $secondary-color;
+        border-color: $secondary-color;
+    }
+}
+
+.button_of img svg {
+
+    &:hover {
+        filter: red;
+    }
+}

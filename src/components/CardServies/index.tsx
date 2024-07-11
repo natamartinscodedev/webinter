@@ -4,17 +4,19 @@ import Image from 'next/image'
 import React from 'react'
 
 interface typeParams {
-    icon: any,
+    Icon: any,
     description: string
 }
 
-const CardDisclousure = ({ icon, description }: typeParams) => {
+const CardService = ({ Icon, description }: typeParams) => {
     return (
-        <div className=''>
-            <Image src={icon} alt={description} />
+        <div className='card_service'>
+            <span>
+                {Icon}
+            </span>
             <p>{description}</p>
         </div>
     )
 }
 
-export default CardDisclousure
+export default CardService

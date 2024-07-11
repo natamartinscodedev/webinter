@@ -1,0 +1,78 @@
+.card_guia-app {
+    margin-bottom: 5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+        max-width: 700px;
+        font-size: 3rem;
+        margin-bottom: 3rem;
+        color: $primary-color;
+
+    }
+}
+
+.box_guia-app {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_guia-app-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    cursor: pointer;
+
+    span {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: $primary-color;
+        color: $background-card-secomdary;
+    }
+
+    p {
+        width: 170px;
+        color: $primary-color;
+        font-weight: $font-weight-bold;
+    }
+
+    &:hover {
+        animation: ease-in-out;
+
+        span {
+            background-color: $background-card-primary;
+        }
+
+        p {
+            color: $background-card-primary;
+        }
+
+        .box_separetion {
+            background-color: $background-card-primary;
+        }
+    }
+}
+
+.box_separetion {
+    width: 5px;
+    height: 60px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -4.4rem;
+
+    background-color: red;
+}

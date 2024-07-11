@@ -1,0 +1,68 @@
+// styles.scss
+@import './root';
+
+main {
+    margin-top: 5rem;
+}
+
+.m_container-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.m_box-info-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.m_box-info-text div {
+    max-width: 400px;
+    width: 100%;
+
+    h2 {
+        font-size: 2rem;
+        color: $primary-color;
+        margin-bottom: 0.2rem;
+    }
+
+    h3 {
+        color: $text-color-primary;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        color: $text-color-secondary;
+    }
+}
+
+.m_box-info-img img {
+    max-width: 400px;
+    max-height: 400px;
+    width: 100%;
+    height: 100%;
+}
+
+// Rsponsive
+@media (max-width: 750px) {
+    .m_box-info-img {
+        display: none;
+    }
+
+    .m_box-info-text {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        div {
+            max-width: 100%;
+        }
+    }
+
+    .m_container-info {
+        margin-bottom: 5rem;
+    }
+
+}

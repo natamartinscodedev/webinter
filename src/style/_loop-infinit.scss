@@ -1,0 +1,47 @@
+.card_infitloop{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    animation: carroselRepostsLeft 20s linear infinite;
+    &:hover {
+        animation-play-state: paused;
+        cursor: pointer;
+    }
+}
+
+// animation
+@keyframes carroselRepostsLeft {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.card_infitloop-service{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    animation: carroselRepostsRight 20s linear infinite;
+    &:hover {
+        animation-play-state: paused;
+        cursor: pointer;
+    }
+}
+
+// animation
+@keyframes carroselRepostsRight {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
