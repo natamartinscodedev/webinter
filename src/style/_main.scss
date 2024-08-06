@@ -21,9 +21,10 @@ main {
 .m_box-info-text div {
     max-width: 400px;
     width: 100%;
+    font-weight: bold;
 
     h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         color: $primary-color;
         margin-bottom: 0.2rem;
     }

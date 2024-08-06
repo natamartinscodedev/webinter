@@ -1,8 +1,15 @@
+.container_loop-products {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
 .Card_loop-products {
     background-color: $primary-color;
     padding: 2rem 1rem;
     overflow: hidden;
     margin-bottom: 10rem;
+
 }
 
 .card_service {
@@ -14,6 +21,7 @@
     align-items: center;
     gap: 1.5rem;
     border-radius: 15px;
+    animation: carroselRepostsRight 6s linear infinite;
 
     p {
         width: 150px;

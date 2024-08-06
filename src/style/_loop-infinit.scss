@@ -1,10 +1,16 @@
-.card_infitloop{
+.container_infinitLoop {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card_infitloop {
     width: 100%;
     display: flex;
     align-items: center;
     gap: 1.5rem;
 
-    animation: carroselRepostsLeft 20s linear infinite;
     &:hover {
         animation-play-state: paused;
         cursor: pointer;
@@ -22,13 +28,12 @@
     }
 }
 
-.card_infitloop-service{
+.card_infitloop-service {
     width: 100%;
     display: flex;
     align-items: center;
     gap: 1.5rem;
 
-    animation: carroselRepostsRight 20s linear infinite;
     &:hover {
         animation-play-state: paused;
         cursor: pointer;

@@ -45,65 +45,126 @@ export default function Home() {
         <section className="container_loopInfinit">
           <div className="container card_infitloop-info">
             <h2>Todos os serviços que você precisa, online e sem burocracia!</h2>
-            <div className="card_infitloop">
-              <CardDisclousure
-                title="O melhor Pix está aqui"
-                description="
+            <div className="container_infinitLoop">
+              <div className="card_infitloop">
+                <CardDisclousure
+                  title="O melhor Pix está aqui"
+                  description="
                 Somos a única instituição financeira com o Pix nota A há 24 meses consecutivos, 
                 avaliado pelo Índice de Qualidade de Serviço do Banco Central (IQS).
                 O resultado do IQS é calculado através dos índices de reclamações, disponibilidade 
                 e tempo de resposta."
-                img={ImgPix}
-                disableTitle={true}
-                titlebutton="Conheça o Pix da Inter"
-              />
-              <CardDisclousure
-                title="Pagamentos e transferências gratuitas"
-                description="
+                  img={ImgPix}
+                  disableTitle={true}
+                  titlebutton="Conheça o Pix da Inter"
+                />
+                <CardDisclousure
+                  title="Pagamentos e transferências gratuitas"
+                  description="
                 Envie e receba dinheiro, faça pagamentos e compre de forma rápida e simples. Com Pix, 
                 TEDs e transferências no Inter, você faz agendamentos para todos os bancos sem pagar nada."
-                img={ImgInfo}
-                disableTitle={false}
-              />
-              <CardDisclousure
-                title="Cartão de crédito sem anuidade com programa de pontos"
-                description="
+                  img={ImgInfo}
+                  disableTitle={false}
+                />
+                <CardDisclousure
+                  title="Cartão de crédito sem anuidade com programa de pontos"
+                  description="
                 Seu novo cartão já vem habilitado para compras no débito e pode ter a função crédito, 
                 sujeito a análise. É sem anuidade e você ainda acumula pontos para trocar por milhas, 
                 cashback e muito mais."
-                img={ImgCard}
-                disableTitle={true}
-                titlebutton="Pedir meu cartão"
-              />
+                  img={ImgCard}
+                  disableTitle={true}
+                  titlebutton="Pedir meu cartão"
+                />
+              </div>
+              <div className="card_infitloop">
+                <CardDisclousure
+                  title="O melhor Pix está aqui"
+                  description="
+                Somos a única instituição financeira com o Pix nota A há 24 meses consecutivos, 
+                avaliado pelo Índice de Qualidade de Serviço do Banco Central (IQS).
+                O resultado do IQS é calculado através dos índices de reclamações, disponibilidade 
+                e tempo de resposta."
+                  img={ImgPix}
+                  disableTitle={true}
+                  titlebutton="Conheça o Pix da Inter"
+                />
+                <CardDisclousure
+                  title="Pagamentos e transferências gratuitas"
+                  description="
+                Envie e receba dinheiro, faça pagamentos e compre de forma rápida e simples. Com Pix, 
+                TEDs e transferências no Inter, você faz agendamentos para todos os bancos sem pagar nada."
+                  img={ImgInfo}
+                  disableTitle={false}
+                />
+                <CardDisclousure
+                  title="Cartão de crédito sem anuidade com programa de pontos"
+                  description="
+                Seu novo cartão já vem habilitado para compras no débito e pode ter a função crédito, 
+                sujeito a análise. É sem anuidade e você ainda acumula pontos para trocar por milhas, 
+                cashback e muito mais."
+                  img={ImgCard}
+                  disableTitle={true}
+                  titlebutton="Pedir meu cartão"
+                />
+              </div>
             </div>
           </div>
         </section>
         <section className="Card_loop-products">
-          <div className="card_infitloop-service">
-            <CardService
-              Icon={<CircleDollarSign size={30} />}
-              description="Pix e TEDs ilimitados"
-            />
-            <CardService
-              Icon={<TrendingUp size={30} />}
-              description="Plataforma de investimentos"
-            />
-            <CardService
-              Icon={<FileBarChart size={30} />}
-              description="Depósito de dinheiro por boleto"
-            />
-            <CardService
-              Icon={<Globe size={30} />}
-              description="Conta Global"
-            />
-            <CardService
-              Icon={<HandCoins size={30} />}
-              description="Empréstimos e Financiamentos"
-            />
-            <CardService
-              Icon={<UserRound size={30} />}
-              description="Atendimento 24h"
-            />
+          <div className="container_loop-products">
+            <div className="card_infitloop-service">
+              <CardService
+                Icon={<CircleDollarSign size={30} />}
+                description="Pix e TEDs ilimitados"
+              />
+              <CardService
+                Icon={<TrendingUp size={30} />}
+                description="Plataforma de investimentos"
+              />
+              <CardService
+                Icon={<FileBarChart size={30} />}
+                description="Depósito de dinheiro por boleto"
+              />
+              <CardService
+                Icon={<Globe size={30} />}
+                description="Conta Global"
+              />
+              <CardService
+                Icon={<HandCoins size={30} />}
+                description="Empréstimos e Financiamentos"
+              />
+              <CardService
+                Icon={<UserRound size={30} />}
+                description="Atendimento 24h"
+              />
+            </div>
+            <div className="card_infitloop-service">
+              <CardService
+                Icon={<CircleDollarSign size={30} />}
+                description="Pix e TEDs ilimitados"
+              />
+              <CardService
+                Icon={<TrendingUp size={30} />}
+                description="Plataforma de investimentos"
+              />
+              <CardService
+                Icon={<FileBarChart size={30} />}
+                description="Depósito de dinheiro por boleto"
+              />
+              <CardService
+                Icon={<Globe size={30} />}
+                description="Conta Global"
+              />
+              <CardService
+                Icon={<HandCoins size={30} />}
+                description="Empréstimos e Financiamentos"
+              />
+              <CardService
+                Icon={<UserRound size={30} />}
+                description="Atendimento 24h"
+              />
+            </div>
           </div>
         </section>
         <section className="card_guia-app">

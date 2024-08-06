@@ -14,6 +14,8 @@
     gap: 1rem;
     background-color: $background-card-tortary;
     border: 2px solid $text-color-primary;
+
+    animation: carroselRepostsLeft 8s linear infinite;
 }
 
 .disclosure_img img {
@@ -27,7 +29,7 @@
 
 
     h2 {
-        font-size: 15px;
+        font-size: 1.5rem;
         margin-bottom: 0.5rem;
     }
 
